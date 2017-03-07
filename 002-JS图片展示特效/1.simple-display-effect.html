@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1.simple-display-effect</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+		#ul1{
+			width: 932px;
+			height: 174px;
+			margin: 50px auto;
+			
+		}
+		#ul1 li{
+			float: left;
+			list-style: none;
+			position: relative;
+		}
+		#ul1 li a{
+			border: 2px solid #ccc;
+			display: block;
+			width: 300px;
+			height: 170px;
+			
+		}
+		#ul1 li a:hover{
+			border-color: rgb(205,92,92);
+		}
+		#ul1 li a img{
+			z-index: 22;
+		}
+		#ul1 li a span{
+			text-align: left;
+			width: 300px;
+			height：40px;
+			line-height: 40px;
+			position: absolute;
+			bottom: 0;
+			left: 2px;
+			color: #fff;
+			background: #000;
+			filter: alpha(Opacity=50);
+			-moz-opacity: 0.5;
+			-khtml-opacity: 0.5;
+			-webkit-opacity: 0.5;
+			opacity: 0.5;
+			display: none;
+			z-index: 33;
+		}
+		#ul1 li:hover span{
+			display: block;
+		}
+		/* .img1:hover{
+			border: 2px solid #ccc;
+		} */
+	</style>
+	<script type="text/javascript">
+/*	window.onload=function(){
+		var oUl=document.getElementById('ul1'),
+			aLi=oUl.getElementsByTagName('li'),
+			aSpan=oUl.getElementsByTagName('span')[0];
+		for(var i=0;i<aLi.length;i++){
+			aLi.onmouseover=show;
+			aLi.onmouseout=hidden;
+			function show(){
+			aSpan.style.display='block';
+			}
+			function hidden(){
+				aSpan.style.display='none';
+			}
+		}	
+		
+	}*/
+	</script>
+</head>
+<body>
+	<ul id="ul1">
+		<li style="margin-right: 10px;">
+			<a href="javascript:;">
+				<img src="img/1.jpg" />
+				<span>学会html5 绝对的屌丝逆袭</span>
+			</a>	
+		</li>
+		<li style="margin-right: 10px;">
+			<a href="javascript:;">
+				<img src="img/2.jpg" />
+				<span>圆角水晶按钮制作</span>
+			</a>	
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="img/3.jpg" />
+				<span>8小时助你攻下html与css样式代码</span>
+			</a>	
+		</li>
+	</ul>
+	<!-- <img class="img1" src="img/2.jpg" /> -->
+</body>
+</html>
